@@ -8,9 +8,14 @@ const CardPizza = ({ img, name, ingredients, price }) => {
                 <img src={img} alt={name} />
                 <h3>Pizza {name}</h3>
                 <hr />
-                
+
                 <p>Ingredientes:</p>
-                <p>🍕 {[ingredients]}</p>
+                <p>🍕</p>
+                <ul>
+                    {ingredients.map((ingredient) => (
+                        <li key={ingredient}>{ingredient}</li>
+                    ))}
+                </ul>
                 <hr />
 
                 <h2>Precio: ${price.toLocaleString("es-CL")}</h2>

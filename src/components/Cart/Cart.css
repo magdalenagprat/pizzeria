@@ -1,0 +1,9 @@
+li {
+    display: flex;
+    gap: 15px;
+}
+
+.pizzaImg {
+    width: 15px;
+    height: 15px;
+}
